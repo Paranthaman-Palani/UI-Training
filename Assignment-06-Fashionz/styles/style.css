@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   font-family: "Roboto",sans-serif;  
+    font-family: "Roboto",sans-serif;  
 }
 img{
     max-width: 100%;
@@ -29,7 +29,7 @@ header .logo{
     width: 75px;
     height: 90px;
     position: absolute;
-    right: 4%;
+    right: 1%;
     top:0;
 }
 .profile-icon > span{
@@ -38,12 +38,13 @@ header .logo{
     height: 70px;
     border: solid 2px #ffffff;
     border-radius: 50%;
-    position: absolute;          
+    position: absolute; 
+    cursor:pointer;         
 }
          /* ----------------------------------------START:: Menu ---------------------------------- */
 
             .menu{
-                width:231px;    
+                width:260px;    
                 position: absolute;
                 display: none;
                 background-color: #ffffff;
@@ -82,7 +83,8 @@ header .logo{
 
 /*-------------------------------------------------------START::Section Row Styles -------------------------------------------------------*/
 .section-row-top,.section-row-bottom{ 
-     padding: 0 3% 2% 6%; 
+  
+     padding: 0 0 2% 6%; 
 }
 .section-row-bottom{
     margin-bottom: 100px;
@@ -113,7 +115,7 @@ header .logo{
 }
 .card  p{
     font-size: 25px;
-    font-weight: lighter;
+    font-weight: 400;
 }
 .card .price p{ 
     font-size: 22px;
@@ -124,7 +126,7 @@ header .logo{
     border: 1.5px solid  #ababab;
     background-color: #2b2c31;
     padding: 12px 23px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500;
     margin-top: 20px;
     color: #ababab;    
@@ -150,7 +152,7 @@ header .logo{
     margin: 30px auto;
 
 }
-.icon{
+.icon,.icon-hover{
     position: absolute;
     width: 7%;
     right:20px;
@@ -158,16 +160,10 @@ header .logo{
     cursor:pointer;
 }
 .icon-hover{
-    position: absolute;
-    width: 7%;
-    right:20px;
-    top : 20px;
     display: none;
-
 }
-.icon:hover ~ .icon-hover{
+.icon,.image-box:hover > .icon-hover{
   display:block;
-
 }
 
 /*-------------------------------------------------------End :: Card Styles -------------------------------------------------------*/
@@ -179,8 +175,8 @@ footer {
     position: fixed;
     width: 100%;
     height: 10%;
-    bottom: 0;
-    right: 0;
+     bottom: 0;
+    /*right: 0; */
     background-color: #000000;
     color: #ffffff;
     padding: 40px;
@@ -189,6 +185,7 @@ footer {
 
 footer div{
     display: inline-block;
+    margin: auto 25px;
 
    
 }
@@ -198,8 +195,10 @@ footer div a{
 footer div h5{
     color: #ffffff;
     text-decoration: none;
-    padding-left: 50px;
+    /* padding-left: 50px; */
     font-weight: 500;
+    text-align: center;
+    /* margin: 20px; */
    
 
 }
