@@ -34,17 +34,16 @@ header .logo{
 }
 .profile-icon > span{
     background-color: #d8d8d8;
-            width: 70px;
-            height: 70px;
-            border: solid 2px #ffffff;
-            border-radius: 50%;
-            position: absolute;          
+    width: 70px;
+    height: 70px;
+    border: solid 2px #ffffff;
+    border-radius: 50%;
+    position: absolute;          
 }
          /* ----------------------------------------START:: Menu ---------------------------------- */
 
             .menu{
-                font-family: "Roboto",sans-serif;
-                width:17rem;    
+                width:231px;    
                 position: absolute;
                 display: none;
                 background-color: #ffffff;
@@ -63,7 +62,7 @@ header .logo{
             .menu li a{
                 padding: 10px 20px;
                 font-size: 18px;
-                color: black;
+                color: #000000;
                 text-decoration: none;
                 display: block;
             }
@@ -118,23 +117,24 @@ header .logo{
 }
 .card .price p{ 
     font-size: 22px;
-    color: hwb(0 67% 33%);
+    color: #ababab;
     padding-top: 3px;
 }
 .card .price button{
-    border: 1.5px solid  hsl(0deg 0% 67%);
+    border: 1.5px solid  #ababab;
     background-color: #2b2c31;
     padding: 12px 23px;
-    font-size: 21px;
+    font-size: 15px;
+    font-weight: 500;
     margin-top: 20px;
-    color: hsl(0deg 0% 67%);    
+    color: #ababab;    
 }
 
 .card .price button:hover{
     color: #000000;
     background-color: #88b282; 
-border-color: #000000;
-cursor: pointer;
+    border-color: #000000;
+    cursor: pointer;
 }
 
 .image-box{
@@ -162,7 +162,6 @@ cursor: pointer;
     width: 7%;
     right:20px;
     top : 20px;
-   
     display: none;
 
 }
@@ -174,7 +173,7 @@ cursor: pointer;
 /*-------------------------------------------------------End :: Card Styles -------------------------------------------------------*/
 /*-------------------------------------------------------START::Section Row Styles -------------------------------------------------------*/
 
-nav {
+footer {
     font-size: 31px;
     text-align: center;
     position: fixed;
@@ -188,15 +187,15 @@ nav {
    
 }
 
-nav div{
+footer div{
     display: inline-block;
 
    
 }
-nav div a{
+footer div a{
     text-decoration: none;
 }
-nav div h5{
+footer div h5{
     color: #ffffff;
     text-decoration: none;
     padding-left: 50px;
