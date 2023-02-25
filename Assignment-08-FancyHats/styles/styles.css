@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  background-image: url("../images/background-image.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #b5b5b5;
+  background-blend-mode: multiply;
+  font-family: "Gothic A1", sans-serif;
+}
+/* ------------------------------------------------------------- START :: HEADER ---------------------------------------=-------------------- */
+header {
+  position: relative;
+  text-align: center;
+}
+/* ------------------------------------------------------------- START :: MENU-ICON --------------------------------------------------------- */
+.menu-icon {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 100px;
+  background-color: #000000;
+  height: 110px;
+}
+/* ------------------------------------------------------------- START :: MENU-SPAN-LINE --------------------------------------------------------- */
+.menu-icon .span-line {
+  width: 36px;
+}
+.menu-icon .span-line span {
+  display: block;
+  height: 3px;
+  margin-bottom: 6px;
+  position: relative;
+  top: 40px;
+  left: 30px;
+  background: #ffffff;
+  border-radius: 2px;
+}
+/* ------------------------------------------------------------- END :: MENU-SPAN-LINE --------------------------------------------------------- */
+
+/* ------------------------------------------------------------- START :: MENU-BAR ------------------------------------------------------------ */
+.menu-bar {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 20px 0px;
+  border-radius: 30px;
+  position: absolute;
+  top: 100px;
+  left: -320px;
+  transition:all 2s;
+}
+.menu-bar > div {
+  font-size: 20px;
+  padding: 14px 0;
+}
+.menu-icon:hover .menu-bar {
+  transform: translatex(305px);
+}
+.menu:hover {
+  background-color: #ffffff;
+  color: #000000;
+  cursor: pointer;
+}
+/* ------------------------------------------------------------- END :: MENU-BAR ----------------------------------------------------------- */
+/* ------------------------------------------------------------- END :: MENU-ICON -------------------------------------------------------------- */
+
+/* ------------------------------------------------------------- START :: HEADING ----------------------------------------------------------- */
+header h1 {
+  font-weight: 800;
+  color: #ffffff;
+  font-size: 80px;
+  display: inline-block;
+  margin: 60px auto;
+}
+/* ------------------------------------------------------------- END :: HEADING --------------------------------------------------------- */
+
+/* ------------------------------------------------------------- END :: HEADER ----------------------------------------------------------------- */
+
+/* ------------------------------------------------------------- START :: SECTION --------------------------------------------------------- */
+section  {
+  text-align: center;
+  color: #ffffff;
+  font-size: 110px;
+  font-weight: 900;
+  position: absolute;
+  right: 22%;
+  bottom: 6%;
+  width: 55%;
+  line-height: 145px;
+  word-spacing: 20px;
+}
+section p span {
+  font-weight: 900;
+  font-size: 150px;
+}
+/* ------------------------------------------------------------- END :: SECTION --------------------------------------------------------- */
+
+
+/* ------------------------------------------------------------- START :: ASIDE -------------------------------------------------------- */
+aside p {
+  color: #ffffff;
+  position: absolute;
+  font-size: 40px;
+  left: 84%;
+  top: 17%;
+  font-weight: 800;
+  transform: rotate(270deg);
+  width: max-content;
+}
+aside p span {
+  font-size: 120px;
+  font-weight: 800;
+}
+/* ------------------------------------------------------------- END :: ASIDE -------------------------------------------------------- */
+
+/* ------------------------------------------------------------- START :: FOOTER -------------------------------------------------------- */
+
+footer {
+  color: #ffffff;
+  display: flex;
+  font-size: 40px;
+  justify-content: space-between;
+  width: 100px;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+/* ------------------------------------------------------------- START :: FOOTER -------------------------------------------------------- */
+
