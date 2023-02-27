@@ -14,7 +14,7 @@ body {
   background-blend-mode: multiply;
   font-family: "Gothic A1", sans-serif;
 }
-/* ------------------------------------------------------------- START :: HEADER ---------------------------------------=-------------------- */
+/* ------------------------------------------------------------- START :: HEADER ------------------------------------------------------------ */
 header {
   text-align: center;
 }
@@ -65,7 +65,7 @@ header {
   padding: 14px 0;
 }
 .menu-icon:hover .menu-bar {
-  transform: translatex(305px);
+  transform: translateX(305px);
 }
 li:hover {
   background-color: #ffffff;
