@@ -1,5 +1,5 @@
 * {
-  background-color: black;
+  background-color: #000000;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -18,12 +18,13 @@ header {
   display: flex;
   flex-direction: column;
   color: #ffffff;
-  font-weight: 600;
-  font-size: 28px;
+  font-weight: 500;
+  font-size: 25px;
 }
 /*---------------------------------------------------- START : HEADER EMAIL  ----------------------------------------------------------------*/
 #email {
   text-align: end;
+  padding-right: 21px;
 }
 /*---------------------------------------------------- END : HEADER EMAIL  ----------------------------------------------------------------*/
 
@@ -35,7 +36,7 @@ header {
 
 .title .name {
   
-  font-size: 180px;
+  font-size: 150px;
 }
 .title .name span {
   font-weight: 100;
@@ -81,14 +82,9 @@ header {
 /* --------------------------------------------------- START:: Logo - Section -------------------------------------------------------------------- */
 .logo-section {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  /* width: 100%; */
-  /* margin: auto; */
 }
 .logo-section div {
-  /* max-height: 150px; */
-  /* min-width: 100px; */
   padding: 20px;
   margin: 0 40px;
 }
@@ -128,8 +124,9 @@ header {
   color: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 50%;
-  padding: 8px 12px;
+  padding-top: 8px;
   margin: auto;
+  text-align: center;
 }
 
 /* --------------------------------------------------- END :: Social icon Section -------------------------------------------------------------------- */
