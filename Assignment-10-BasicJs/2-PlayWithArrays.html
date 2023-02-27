@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+<!--  Section 2. Play With Arrays  -->
+<script>
+// ----------------------------- 1. A cricket Team has 11 players . create a list with a list of names ------------------------------------------
+     let list=["virat","rohit","rahul","rishabh","hardik","dhoni","yadav","jaydev","jadeja","srikar","dinesh"];
+     console.log(list);
+
+//------------------------------ 2. Remove First Player ---------------------------------------------------------------------------->
+     
+     list.shift();
+     console.log(list);
+
+//------------------------------- 3.Now,How Many Players? ----------------------------------------------------------------------------->
+     console.log(list.length);
+
+//------------------------------- 4.Add new Player to make it as 11 ---------------------------------------------------------------------->
+     list.push("zoel");
+     console.log(list);
+
+//-------------------------------- 5.Sort the Players ---------------------------------------------------------------------------->
+     console.log(list.sort());
+
+//-------------------------------- 6. playersName-Random Jersy Number -------------------------------------------------------------->
+     
+     let result = list.map(v => v+"-"+(Math.floor(Math.random() * 50)));
+     console.log(result);
+//--------------------------------- 7. uppercase and store in new array --------------------------------------------------------------->
+     let newList=[];
+     list.forEach((v,i) => {
+     newList[i]=v.toUpperCase();
+     });
+     console.log(newList);
+
+</script>
+</body>
+</html>
