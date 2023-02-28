@@ -1,0 +1,203 @@
+* {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+/*---------------------------------------------------- START: MAIN SECTION  --------------------------------------------------------------*/
+main {
+  margin: 4% 11%;
+}
+/*---------------------------------------------------- END : MAIN SECTION  ----------------------------------------------------------------*/
+/*---------------------------------------------------- START:  Header - Email,Name,Profile --------------------------------------------------------------*/
+header {
+  display: flex;
+  flex-direction: column;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 25px;
+}
+/*---------------------------------------------------- START : HEADER EMAIL  ----------------------------------------------------------------*/
+#email {
+  text-align: end;
+  padding-right: 21px;
+}
+/*---------------------------------------------------- END : HEADER EMAIL  ----------------------------------------------------------------*/
+
+/*---------------------------------------------------- START : HEADER TITLE - NAME  ----------------------------------------------------------------*/
+.title {
+  margin: 150px;
+  text-align: center;
+}
+
+.title .name {
+  
+  font-size: 150px;
+}
+.title .name span {
+  font-weight: 100;
+}
+/*---------------------------------------------------- END : HEADER TITLE - NAME  ----------------------------------------------------------------*/
+
+/*---------------------------------------------------- START : HEADER TITLE - PROFILE  ----------------------------------------------------------------*/
+.title .profile {
+  color: #cfcfcf;
+  font-size: 60px;
+}
+.title .profile span {
+  color: #4b8fe2;
+}
+/*---------------------------------------------------- END : HEADER TITLE - PROFILE  ----------------------------------------------------------------*/
+
+/*---------------------------------------------------- END :  Header - Email,Name,Profile --------------------------------------------------------------*/
+
+
+/* --------------------------------------------------- START :: Product Gallery - Section -------------------------------------------------------------------- */
+.product-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.product-section > div {
+  width: 33%;
+  padding: 20px;
+}
+/* --------------------------------------------------- END :: Product Gallery - Section -------------------------------------------------------------------- */
+/* --------------------------------------------------- START:: Bottom - Section -------------------------------------------------------------------- */
+.bottom-section {
+  margin: 8% auto;
+  color: #cfcfcf;
+  font-size: 48px;
+  text-align: center;
+}
+.bottom-section h3 span {
+  color: #b8e986;
+}
+/* --------------------------------------------------- END :: Bottom - Section -------------------------------------------------------------------- */
+
+/* --------------------------------------------------- START:: Logo - Section -------------------------------------------------------------------- */
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+.logo-section div {
+  padding: 20px;
+  margin: 0 40px;
+}
+/* --------------------------------------------------- END :: Logo - Section -------------------------------------------------------------------- */
+
+/* --------------------------------------------------- START:: Bottom line ---------------------------------------------------------------------- */
+.bottom-line {
+  width: 300px;
+  margin: 15% auto 5%;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.bottom-line .first-line {
+  width: 28px;
+  border-top: 2px solid #ffffff;
+  padding: 15px;
+}
+
+.bottom-line .second-line {
+  width: 220px;
+  border-top: 2px solid #ffffff;
+}
+/* --------------------------------------------------- END :: Bottom Line -------------------------------------------------------------------- */
+
+/* --------------------------------------------------- START :: Social icon Section -------------------------------------------------------------------- */
+.social-section {
+  width: 350px;
+  display: flex;
+  margin: 80px auto;
+}
+.icon {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  padding-top: 8px;
+  margin: auto;
+  text-align: center;
+}
+
+/* --------------------------------------------------- END :: Social icon Section -------------------------------------------------------------------- */
+
+
+/* --------------------------------------------------- START :: Footer -------------------------------------------------------------------- */
+footer {
+  font-size: 14px;
+  margin: 60px auto 150px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+/* --------------------------------------------------- END  :: Footer -------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------START::Media - Query ------------------------------------------------------*/
+@media only screen and (max-width: 576px) {
+  main {
+    margin: 0px;
+  }
+  header {
+    flex-direction: column-reverse;
+  }
+  .title {
+    margin: 100px 30px 10px;
+  }
+  header .title .name {
+    font-size: 50px;
+  }
+  header .title .profile {
+    margin-top: 15px;
+    font-size: 30px;
+  }
+  #email {
+    text-align: center;
+    font-size: 15px;
+  }
+  .product-section {
+    margin: 80px 0 60px;
+  }
+  .product-section > div {
+    min-width: 360px;
+    padding: 10px; 
+  }
+  .bottom-section {
+    font-size: 28px;
+  }
+  .logo-section div {
+    max-width: 100px;
+  }
+  .logo-section {
+    flex-wrap: wrap;
+    margin: 2% auto;
+    width: 370px;
+  }
+  .bottom-line {
+    margin-top: 160px;
+    width: 200px;
+  }
+  .social-section {
+    margin-top: 30px;
+    width: 100%; 
+  }
+  .bottom-line .first-line {
+    width: 10px;
+  }
+  .bottom-line .second-line {
+    width: 130px;
+  }
+  footer {
+    margin-bottom: 50px;
+  }
+}
+/* --------------------------------------------------------------------END ::Media - Query ------------------------------------------------------*/
