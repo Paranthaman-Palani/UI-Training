@@ -40,11 +40,15 @@
 
 //-------------------------------- 5. Reverse a String ------------------------------------------------------>
       function reverseString(str){
-        let strRev = "";
-        for(i=str.length-1;i>=0;i--){
-            strRev += str[i];
-        }
-        return strRev;
+        // let strRev = "";
+        // for(i=str.length-1;i>=0;i--){
+        //     strRev += str[i];
+        // }
+        // return strRev;
+
+        let arrayString = str.split("");
+        let reverseArray = arrayString.reverse();
+         return reverseArray.join("");
       }
       console.log(reverseString("Hello"));
 
