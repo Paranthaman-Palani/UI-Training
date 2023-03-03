@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+body{
+    background-color: #000000;
+}
+
+/*-----------------------------------------------------START :: HEADER ------------------------------------------------------------*/
+header{
+    background-color: #abe189;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 27px;
+    font-weight: 700;
+    font-size: 23px;
+    letter-spacing: 2px;
+}
+/*-----------------------------------------------------END :: HEADER ------------------------------------------------------------*/
+
+/*-----------------------------------------------------START :: SESSION-1 ------------------------------------------------------------*/
+h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 100px;
+    font-weight: 400;
+}
+.firstSession{
+    width: 50%;
+    margin: 10% auto;
+    padding: 5%;
+    
+}
+
+.shape{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    position: relative;
+}
+.circle,.triangle,.square,#next,#calc,.startAgain:hover{
+    cursor: pointer;
+}
+.circle{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: #00997d;
+}
+.triangle{
+    border: 90px solid  ;
+    border-top: 0;
+    border-bottom: 180px solid #ffa8db;
+    position: relative;
+}
+.square{
+    width: 180px;
+    height:180px;
+    background-color: #e0e0e0;
+}
+#next{
+    color: #fff;
+    padding: 10px 90px;
+    border: 2px solid #ffffff;
+    background-color: #000;
+    text-align: center;
+    margin: 110px auto;
+    display: block;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: 600;
+    display:  none;
+    letter-spacing: 1px;
+
+}
+
+
+.tickMark{
+    width: 55px;
+    height: 25px;
+    border:4px solid #ffffff;
+    transform: rotate(315deg);
+    border-top: #000000;
+    border-right: #000000;
+    position: relative;
+    top:70px;
+    left: 65px;
+    display: none;
+}
+.centerMark{
+    position: absolute;
+    top:100px;
+    left: -30px;
+}
+/*-----------------------------------------------------END :: SESSION-1 ------------------------------------------------------------*/
+
+/*-----------------------------------------------------START :: SESSION-2 ------------------------------------------------------------*/
+.secondSession{
+    width: 50%;
+    margin: 12% auto;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.secondSession> #input{
+    background-color: #000000;
+}
+.secondSession h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 60px;
+    font-weight: 400;
+}
+#input{
+    width: 48rem;
+    height: 95px;
+    background-color: #000000;
+    border: 2px #ffffff solid;
+    color: #ffffff;
+    font-size: 30px;
+    padding: 20px;
+}
+#calc{
+    width: 33%;
+    background-color: #000000;
+    border:  2px solid #ffffff;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin-top: 60px;
+}
+
+
+
+/*-----------------------------------------------------END :: SESSION-2 ------------------------------------------------------------*/
+
+/*-----------------------------------------------------START :: SESSION-3 ------------------------------------------------------------*/
+.thirdSession{
+    width: 50%;
+    margin: 4% auto;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.thirdSession h2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 60px;
+    margin:35px 0 20px;
+    font-weight: 400;
+}
+.outputBox{
+
+    width: 70%;
+    height: 100%;
+    color: #ffffff;
+    font-size: 23px;
+    border-spacing: 0 20px;
+    margin-top: -25px;
+    
+}
+.row{
+    height: 22px;
+    
+}
+
+
+td:nth-child(2){
+    background-color:hsl(214deg 30% 38%);
+    width: 27%;
+    padding: 11px 0px 11px 10px;
+    
+}
+td:nth-child(1){
+    background-color: #0a63d6;
+    width: 43%;
+    padding: 11px 0px 11px 10px;
+}
+td:nth-child(3){
+    background-color: #3388ff;
+    width:29%;
+    padding: 11px 0px 11px 10px;
+}
+.startAgain{
+    width: 33%;
+    background-color: #000000;
+    border:  2px solid #ffffff;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 75px;
+}
+
+/*-----------------------------------------------------END :: SESSION-3 ------------------------------------------------------------*/
+
+
+
+
+
+
+
+
+
+
