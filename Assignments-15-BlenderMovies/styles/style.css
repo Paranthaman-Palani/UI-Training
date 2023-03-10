@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color: #F5F5F5;
+    width: 100%;
+
+position: relative;
+}
+img{
+    max-width: 100%;
+
+}
+video{
+    max-width: 100%;
+    
+}
+/* ---------------------------------------------------------------START :: Header ----------------------------------------------------------- */
+header{
+    position: fixed;
+    top:0;
+    box-shadow: 0px 4px 5px 1px #00000029;
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    z-index: 1;
+}
+.contentContainer{
+    width: 1300px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profilePhoto>img{
+height: 31px;
+width: 32px;
+object-fit: cover;
+object-position: 0 0;
+border-radius: 50%;
+}
+.profile{
+    width: 105px;
+    height: 30px;
+    opacity: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile div:nth-child(1){
+    width: 61px;
+    height: 17px;
+    font-size: 12px;
+}
+.profile div:nth-child(2){
+    width: 35px;
+    height: 30px;
+}
+/* --------------------------------------------------------------- END :: Header ----------------------------------------------------------- */
+
+/* --------------------------------------------------------------- START :: Main ----------------------------------------------------------- */
+main{
+    position: relative;
+    margin:100px auto 0;
+    width: 1300px;
+    height: 90%;
+    display: flex;
+}
+.mainSection{
+    width: 970px;
+    
+}
+
+.videoContainer{
+    position: relative;
+}
+.videoSection{
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.fa-circle-play,.fa-circle-pause{
+    position: absolute;
+    left:45%;
+    top:40%;
+    font-size: 4vw;
+    color: white;
+    }
+    
+.title{
+    font-weight: 600;
+    font-size: 26px;
+    color: #222222;
+    height: 36px;
+    width: 70px;
+}
+.vedioDecription{
+    margin: 17px 0;
+}
+
+.commentContainer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.commenterProfile{
+    width: 50px;
+    height: 50px;
+}
+.commenterPhoto{
+    border-radius: 50%;
+}
+.commenterContents{
+    width: 905px;
+}
+.commenterName{
+    font-size: 14px;
+    font-weight: bold;
+}
+.commentDescription{
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+aside{
+    margin-left: 30px;
+    width: 300px;
+    
+}
+
+.posterContainer{
+    margin: 10px 0;
+}
+
+/* --------------------------------------------------------------- END :: Main ----------------------------------------------------------- */
+
+/* --------------------------------------------------------------- START :: Footer ----------------------------------------------------------- */
+footer{
+    
+    width: 100%;
+    height: 77px;
+    margin-top: 10px;
+    background-color: #222222;
+    color: white;
+}
+.chat{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 25px;
+    position: fixed;
+    right: 39px;
+    bottom:20px;
+    background-color: #C432AE;
+}
+
+.chat>img{
+    border-radius: 50%;
+    position: absolute;
+    top:11px;
+    left:11px;
+}
+
+.footerContainer{
+    width: 1300px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/* --------------------------------------------------------------- END :: Footer ----------------------------------------------------------- */
+
+
+
+
+/* --------------------------------------------------------------- START :: Media Query ----------------------------------------------------------- */
+@media only screen and (max-width:767px) {
+    .mainSection{
+        width: 100%;
+    }
+    main{
+        width: 93%;
+        flex-direction: column;
+        font-size: 12px;
+    
+    }
+    header,footer{
+        width: 100%;
+    }
+    .contentContainer,.footerContainer {
+        width: 93%;}
+        .profile>div:nth-child(1){
+            display: none;
+            width: 0px;
+        }
+    .profile{
+        width: 30px;
+    }
+    .footerContainer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    aside{
+        width: 100%;
+        margin: 0;
+    }
+    .title{
+        font-size: 16px;
+    }
+    .footerContainer>span:nth-child(1){
+        font-size: 12px;
+    }
+    .footerContainer>span:nth-child(2){
+        margin-top: 5px;
+        font-size: 18px;
+    }
+    .commenterContents{
+        font-size: 10px;
+        width: 80%;
+    }
+    
+    
+}
+
+/* --------------------------------------------------------------- END :: Media Query ----------------------------------------------------------- */
