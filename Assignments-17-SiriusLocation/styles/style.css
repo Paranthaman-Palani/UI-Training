@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+body{
+    background-color: hsl(0deg 0% 96%);
+}
+img{
+    max-width: 100%;
+}
+header{
+    width:180px;
+    margin: 2% auto;
+}
+
+/*-------------------------------------------------------------------- START :: Tabs --------------------------------------------------------*/
+#tabs{
+    background-color: hsl(0deg 0% 96%);
+    max-width: 40%;
+    margin: 60px auto;
+    position: relative ;
+    padding: 3px 40px;
+    border-width: 0;
+}
+
+.ui-tabs .ui-tabs-nav {
+    border-width: 0;
+    background-color: white;
+    margin-left: 20px;
+    padding:2px;
+    background-color: hsl(0deg 0% 96%);
+}
+
+.ui-tabs .ui-tabs-panel {
+    display: block;
+    padding: 30px;
+    background: white;
+    box-shadow: grey 0px 0px 4px;
+}
+
+#nav{
+    margin-left: 10px;
+}
+
+.ui-accordion .ui-accordion-content {
+    height: 100%;
+    padding: 1em 2.2em;
+    border-top: 0;
+    overflow: auto;
+}
+
+#tabs li.ui-tabs-active .ui-tabs-anchor,
+li.ui-state-disabled .ui-tabs-anchor {
+    border-radius: 5px 5px 0 0;
+    background-color: #071b6d; 
+    height: 40px; 
+   
+}
+
+#tabs li {
+    background: black;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 5px 5px 0 0;
+}
+#tabs a {
+    color: #ffffff;
+    padding: 12px 22px;
+    font-weight: 600;
+}
+
+/* ---------------------------------------------------------------- START :: First - Tab ---------------------------------------------------*/
+
+
+#tabs-1 p{
+    background-color: white;
+    line-height: 23px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+
+/* ---------------------------------------------------------------- END :: First - Tab ---------------------------------------------------*/
+
+/* ----------------------------------------------------------------START :: Second - Tab ---------------------------------------------------*/
+
+#tabs-2 .ui-state-default,
+.ui-widget-content .ui-state-default {
+    color: #ffffff;
+    background-color: #838db6;
+    border-radius:0;
+    height: 40px;
+    border: 0;
+}
+
+#tabs-2 h3 {
+    margin-top: 10px;
+    padding: 11px;
+    font-size: 13px;
+    font-weight: 600;
+}
+#tabs-2 {
+    border: none;
+    height: 650px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+#tabs-2 .ui-widget-content{
+    border: 1px solid #838db6;
+    border-radius:0 ;
+    height: 150px;
+    
+}
+/* ---------------------------------------------------------------- END :: Second - Tab ---------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------- START :: Third - Tab ---------------------------------------------------*/
+
+#tabs-3{
+    height: 610px;
+    overflow: scroll;
+}
+tr{
+    padding: 70px;
+}
+tr:nth-child(odd){
+    background-color: #eeeeee;
+    
+}
+tr:nth-child(even){
+    background-color: #eed8f3;
+    
+}
+td>img{
+    max-width: 30px; 
+}
+
+table{
+    text-align: center;
+    width: 100%;
+    border-spacing: 0 10px;
+
+}
+td{
+    width: 80px;
+    text-align: left;
+    padding: 10px;
+    margin-left: 30px;
+    font-size: 13px;
+
+    
+
+}
+td:nth-child(1){
+    width: 40px;
+}
+td:nth-child(2){
+    width: 110px;
+}
+
+/* ---------------------------------------------------------------- END :: Third - Tab ---------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------END :: Tabs --------------------------------------------------------*/
