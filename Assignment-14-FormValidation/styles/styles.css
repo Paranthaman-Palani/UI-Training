@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+img{
+    max-width: 100%;
+}
+
+/*------------------------------------------------- START :: Body --------------------------------------------------------------------------*/
+body{
+    background-color: hsl(0deg 0% 96%);
+}
+/*------------------------------------------------- END :: Body --------------------------------------------------------------------------*/
+
+/*------------------------------------------------- START :: Header --------------------------------------------------------------------------*/
+header{
+    width:200px;
+    margin: 2% auto;
+}
+/*------------------------------------------------- END :: Header --------------------------------------------------------------------------*/
+
+/*------------------------------------------------- START :: Main --------------------------------------------------------------------------*/
+main{
+    background-color: white;
+    max-width: 48em;
+    margin: 40px auto;
+    position: relative ;
+    padding: 3px 40px;
+    box-shadow: grey 0px 0px 4px;
+}
+.side{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.side-container{
+    width: calc((100% - 20px) / 2);
+    margin-bottom: 5px;
+}
+label{
+    margin-top: 50px;
+    font-size: 14px;
+}
+.inputBox{
+    margin-top: 20px;
+}
+.inputError{
+    border: 2px #a80000 solid;
+}
+input{
+    margin: 10px;
+    padding: 17px;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px grey solid;
+    font-size: 14px;
+    margin: 5px 0;
+}
+input :focus{
+    outline: 0;
+}
+
+button{
+    width: 100%;
+    padding: 17px;
+    background-color: hsl(225deg 100% 22%);
+    color:white;
+    cursor: pointer;
+    margin: 30px 0 40px;
+    border-radius: 6px;
+    font-size: 18px;
+}
+form>h2{
+    color:  hsl(225deg 100% 22%);
+    font-size: 22px;
+    margin: 55px 0 35px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+span{
+    font-size: 13px;
+    height: 10px;
+    color: #a80000;
+    font-weight: 400;
+}
+
+
+/*------------------------------------------------- END :: Main --------------------------------------------------------------------------*/
