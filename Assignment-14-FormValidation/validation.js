@@ -35,43 +35,54 @@ const formValidation={
         'errorMessage': 'Card Expiry is Required',
         'invalidMessage':'Card Expiry is not valid'
     },
+
     'cvv':{
         'regexPattern':/^\d{3,4}$/,
         'errorMessage': 'CVV is Required',
         'invalidMessage':'CVV is not valid'
-    }         
+    } 
 }
 //-------------------------------------------------------- END :: FormValidation - Object --------------------------------------------------->
 
+console.log(formValidation)
 
 let submitBtn = document.querySelector("#form");
 
 let inputs= document.querySelectorAll("input");
-let errorMessage = document.querySelectorAll("span");
+
+let inputBox  = document.querySelectorAll(".inputBox");
+
+inputBox.forEach(errorBox => {
+    p  = document.createElement("span");
+    errorBox.append(p);
+    
+});
+
+let errorBox  = document.querySelectorAll("span");
 
 
 submitBtn.addEventListener('submit',(event)=>{
+    
     event.preventDefault();
 
-   for(let i=0;i<inputs.length;i++){
-    let nameId = inputs[i].getAttribute('id');
- 
-    let match = formValidation[nameId].regexPattern;
+    for (const i in inputs) {
 
-    if(inputs[i].value === '' ){
-        inputs[i].setAttribute("class","inputError");
-        errorMessage[i].innerHTML=formValidation[nameId].errorMessage;
-    }
-    else if(!(match.test(inputs[i].value))){
-        inputs[i].setAttribute("class","inputError");
-        errorMessage[i].innerHTML=formValidation[nameId].invalidMessage;
-    }
-    else{
-        inputs[i].setAttribute("class","");
-        errorMessage[i].innerHTML="";
-    }
+        let nameId = inputs[i].getAttribute("id")
+        let match = formValidation[nameId].regexPattern;
 
-   }
+            if(inputs[i].value === '' ){
+                inputs[i].setAttribute("class","inputError");
+                errorBox[i].innerHTML=formValidation[nameId].errorMessage;
+            }
+            else if(!(match.test(inputs[i].value))){
+                inputs[i].setAttribute("class","inputError");
+                errorBox[i].innerHTML=formValidation[nameId].invalidMessage;
+            }
+            else{
+                inputs[i].setAttribute("class","");
+                errorBox[i].innerHTML="";
+            } 
+    }
 
 
 })

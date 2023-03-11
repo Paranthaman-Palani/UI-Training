@@ -10,7 +10,7 @@ img{
 
 /*------------------------------------------------- START :: Body --------------------------------------------------------------------------*/
 body{
-    background-color: hsl(0deg 0% 96%);
+    background-color: #f5f5f5;
 }
 /*------------------------------------------------- END :: Body --------------------------------------------------------------------------*/
 
@@ -23,21 +23,20 @@ header{
 
 /*------------------------------------------------- START :: Main --------------------------------------------------------------------------*/
 main{
-    background-color: white;
+    background-color: #ffffff;
     max-width: 48em;
     margin: 40px auto;
     position: relative ;
     padding: 3px 40px;
-    box-shadow: grey 0px 0px 4px;
+    box-shadow: #808080 0px 0px 4px;
 }
 .side{
-    margin-top: 20px;
+    
     display: flex;
     justify-content: space-between;
 }
 .side-container{
     width: calc((100% - 20px) / 2);
-    margin-bottom: 5px;
 }
 label{
     margin-top: 50px;
@@ -54,7 +53,7 @@ input{
     padding: 17px;
     width: 100%;
     border-radius: 6px;
-    border: 1px grey solid;
+    border: 1px #808080 solid;
     font-size: 14px;
     margin: 5px 0;
 }
@@ -65,21 +64,25 @@ input :focus{
 button{
     width: 100%;
     padding: 17px;
-    background-color: hsl(225deg 100% 22%);
-    color:white;
+    background-color: #001c70;
+    color:#ffffff;
     cursor: pointer;
     margin: 30px 0 40px;
     border-radius: 6px;
-    font-size: 18px;
-}
-form>h2{
-    color:  hsl(225deg 100% 22%);
-    font-size: 22px;
-    margin: 55px 0 35px;
+    font-size: 17px;
+    font-weight: 500;
     letter-spacing: 1px;
+}
+h2{
+    color:  #001c70;
+    font-size: 23px;
+    margin: 40px 0 25px;
+    letter-spacing: 1.5px;
     font-weight: 500;
 }
-
+h2:nth-child(1){
+    margin: 40px 0 10px;
+}
 span{
     font-size: 13px;
     height: 10px;
