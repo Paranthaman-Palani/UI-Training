@@ -37,12 +37,12 @@ header{
     align-items: center;
 }
 .profilePhoto>img{
-height: 31px;
-width: 32px;
-object-fit: cover;
-object-position: 0 0;
-border-radius: 50%;
-}
+    height: 31px;
+    width: 32px;
+    object-fit: cover;
+    object-position: 0 0;
+    border-radius: 50%;
+    }
 .profile{
     width: 105px;
     height: 30px;
@@ -74,6 +74,7 @@ main{
 .mainSection{
     width: 970px;
     
+    
 }
 
 .videoContainer{
@@ -81,7 +82,10 @@ main{
 }
 .videoSection{
     max-width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+i,.videoSection,.chat,.profilePhoto:hover{
+    cursor: pointer;
 }
 .fa-circle-play,.fa-circle-pause{
     position: absolute;
@@ -94,12 +98,16 @@ main{
 .title{
     font-weight: 600;
     font-size: 26px;
+    line-height: 36px;
     color: #222222;
     height: 36px;
     width: 70px;
 }
 .vedioDecription{
-    margin: 17px 0;
+    margin: 10px 0 25px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #222222;
 }
 
 .commentContainer{
@@ -117,14 +125,18 @@ main{
 }
 .commenterContents{
     width: 905px;
+
 }
 .commenterName{
     font-size: 14px;
     font-weight: bold;
+    line-height: 24px;
+    color: #222222;
 }
 .commentDescription{
     font-size: 13px;
-    padding-top: 5px;
+    line-height: 20px;
+    color: #222222;
 }
 
 aside{
@@ -135,6 +147,15 @@ aside{
 
 .posterContainer{
     margin: 10px 0;
+}
+h3{
+    font-size: 20px;
+    line-height: 27px;
+    color: #222222;
+}
+.line2{
+    margin: 20px 0;
+    display: none;
 }
 
 /* --------------------------------------------------------------- END :: Main ----------------------------------------------------------- */
@@ -147,6 +168,9 @@ footer{
     margin-top: 10px;
     background-color: #222222;
     color: white;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: bold;
 }
 .chat{
     width: 70px;
@@ -155,7 +179,7 @@ footer{
     font-size: 25px;
     position: fixed;
     right: 39px;
-    bottom:20px;
+    bottom:40px;
     background-color: #C432AE;
 }
 
@@ -212,20 +236,43 @@ footer{
         margin: 0;
     }
     .title{
-        font-size: 16px;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 36px;
+        color: #222222;
+        height: 36px;
+        width: 70px;
     }
     .footerContainer>span:nth-child(1){
-        font-size: 12px;
+        font-size: 15px;
     }
     .footerContainer>span:nth-child(2){
         margin-top: 5px;
-        font-size: 18px;
+        font-size: 23px;
     }
     .commenterContents{
-        font-size: 10px;
         width: 80%;
     }
-    
+    .commenterName{
+        font-size: 12px;
+    }
+    .commentDescription{
+        font-size: 11px;
+    }
+    .line2{
+        margin: 20px 0;
+        display: block;
+    }
+    main h3{
+        font-size: 15px;
+    }
+    .title{
+        font-size:18px;
+    }
+    .vedioDecription{
+        font-size: 12px;
+        margin-top: 0;
+    }
     
 }
 

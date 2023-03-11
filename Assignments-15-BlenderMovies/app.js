@@ -100,6 +100,7 @@ const poster = [
         videoSection.controls=false;
 
     });
+    
 // Pause-icon-event
     pause.addEventListener("click",()=>{
         pause.style.display="none";
@@ -124,8 +125,8 @@ let videoDescription = document.createElement("p");
     videoDescription.innerText=e.description;
     mainSection.append(videoDescription);
 
-let line = document.createElement("hr");
-    mainSection.append(line);
+let line1 = document.createElement("hr");
+    mainSection.append(line1);
 
 let comments = document.createElement("h3");
     comments.innerText="Comments";
@@ -162,13 +163,13 @@ for(let c of e.comments){
     commenterContents.append(commentDescription);
 
     commentContainer.append(commenterContents);
-
     
-
-
     mainSection.append(commentContainer);
 }
 }
+let line2 = document.createElement("hr");
+line2.setAttribute("class","line2");
+    mainSection.append(line2);
 
 let asideContainer = document.querySelector("aside");
 
