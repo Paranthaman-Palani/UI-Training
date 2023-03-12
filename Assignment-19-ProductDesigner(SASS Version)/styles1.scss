@@ -1,0 +1,219 @@
+$whiteColor: #fff;
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+* {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+/*---------------------------------------------------- START: MAIN SECTION  --------------------------------------------------------------*/
+main {
+  margin: 4% 11%;
+}
+/*---------------------------------------------------- END : MAIN SECTION  ----------------------------------------------------------------*/
+/*---------------------------------------------------- START:  Header - Email,Name,Profile --------------------------------------------------------------*/
+    header {
+    @include flex-column;
+    color: $whiteColor;
+    font-weight: 500;
+    font-size: 25px;
+
+            #email {
+                text-align: end;
+                padding-right: 21px;
+                    }
+
+            .title {
+                margin: 150px;
+                text-align: center;
+                    
+                        .name {
+                        font-size: 150px;
+                    
+                                span {
+                                    font-weight: 10;
+                                }
+                        }
+                        .profile {
+                        color: #cfcfcf;
+                        font-size: 60px;
+                    
+                                span {
+                                    color: #4b8fe2;
+                                }
+                        }
+                    }
+        }
+
+
+/*---------------------------------------------------- END :  Header - Email,Name,Profile --------------------------------------------------------------*/
+
+/* --------------------------------------------------- START :: Product Gallery - Section -------------------------------------------------------------------- */
+    .product-section {
+    @include flex-center;
+    flex-wrap: wrap;
+            div {
+                width: 33%;
+                padding: 20px;
+            }
+    }
+
+/* --------------------------------------------------- END :: Product Gallery - Section -------------------------------------------------------------------- */
+/* --------------------------------------------------- START:: Bottom - Section -------------------------------------------------------------------- */
+.bottom-section {
+  margin: 8% auto;
+  color: #cfcfcf;
+  font-size: 48px;
+  text-align: center;
+
+  h3 {
+    span {
+      color: #b8e986;
+    }
+  }
+}
+
+/* --------------------------------------------------- END :: Bottom - Section -------------------------------------------------------------------- */
+
+/* --------------------------------------------------- START:: Logo - Section -------------------------------------------------------------------- */
+.logo-section {
+  display: flex;
+  align-items: center;
+    div {
+      padding: 20px;
+      margin: 0 40px;
+    }
+}
+
+/* --------------------------------------------------- END :: Logo - Section -------------------------------------------------------------------- */
+
+/* --------------------------------------------------- START:: Bottom line ---------------------------------------------------------------------- */
+.bottom-line {
+  width: 300px;
+  margin: 15% auto 5%;
+  color: $whiteColor;
+  display: flex;
+  justify-content: space-evenly;
+
+  .first-line {
+    width: 28px;
+    border-top: 2px solid $whiteColor;
+    padding: 15px;
+  }
+  .second-line {
+    width: 220px;
+    border-top: 2px solid $whiteColor;
+  }
+}
+
+/* --------------------------------------------------- END :: Bottom Line -------------------------------------------------------------------- */
+
+/* --------------------------------------------------- START :: Social icon Section -------------------------------------------------------------------- */
+.social-section {
+  width: 350px;
+  display: flex;
+  margin: 80px auto;
+}
+.icon {
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
+  color: $whiteColor;
+  border: 1px solid $whiteColor;
+  border-radius: 50%;
+  padding-top: 8px;
+  margin: auto;
+  text-align: center;
+}
+
+/* --------------------------------------------------- END :: Social icon Section -------------------------------------------------------------------- */
+
+/* --------------------------------------------------- START :: Footer -------------------------------------------------------------------- */
+footer {
+  font-size: 14px;
+  margin: 60px auto 150px;
+  color: $whiteColor;
+  display: flex;
+  justify-content: center;
+}
+/* --------------------------------------------------- END  :: Footer -------------------------------------------------------------------- */
+
+/* --------------------------------------------------------------------START::Media - Query ------------------------------------------------------*/
+@media only screen and (max-width: 576px) {
+  main {
+    margin: 0px;
+  }
+  header {
+    flex-direction: column-reverse;
+      .title{
+        margin: 100px 30px 10px;
+        .name {
+            font-size: 50px;
+        }
+        .profile{
+            margin-top: 15px;
+            font-size: 30px;
+        }
+
+
+      }
+      #email {
+        text-align: center;
+        font-size: 15px;
+      }
+  }
+
+ 
+  .product-section {
+    margin: 80px 0 60px;
+    div{
+        min-width: 360px;
+    padding: 10px;
+    }
+  }
+ 
+  .bottom-section {
+    font-size: 28px;
+  }
+
+  .logo-section {
+    flex-wrap: wrap;
+    margin: 2% auto;
+    width: 370px;
+    div{
+        max-width: 100px;
+    }
+  }
+  .bottom-line {
+    margin-top: 160px;
+    width: 200px;
+    .first-line{
+        width: 10px;
+    }
+    .second-line{
+        width: 130px;
+    }
+  }
+  .social-section {
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  footer {
+    margin-bottom: 50px;
+  }
+}
+/* --------------------------------------------------------------------END ::Media - Query ------------------------------------------------------*/
