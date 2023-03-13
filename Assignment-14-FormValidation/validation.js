@@ -53,8 +53,8 @@ let inputs= document.querySelectorAll("input");
 let inputBox  = document.querySelectorAll(".inputBox");
 
 inputBox.forEach(errorBox => {
-    p  = document.createElement("span");
-    errorBox.append(p);
+    errorText  = document.createElement("span");
+    errorBox.append(errorText);
     
 });
 
